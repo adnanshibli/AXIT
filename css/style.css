@@ -1,0 +1,1174 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;
+
+}
+
+.navbar-brand
+{
+    font-size: 30px;
+    color: #eb4924;
+}
+/*  <!-- NavBar For Mobile --> */
+.mini-navbar
+{
+    background-color: #222;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%);
+    overflow: hidden;
+}
+.mini-navbar .fa-times
+{
+    color: #9d9d9d;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.mini-navbar > ul > li:first-of-type
+{
+    margin-top: 100px;
+}
+.mini-navbar > ul > li > a
+{
+    color: #9d9d9d;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    /* margin-left: 120px; */
+   
+}
+.mini-navbar > ul > li:first-of-type
+{
+    width: 88%;
+}
+.mini-navbar > ul > li:nth-of-type(2)
+{
+    width: 83%;
+}
+.mini-navbar > ul > li:nth-of-type(3)
+{
+    width: 78%;
+}
+.mini-navbar > ul > li:nth-of-type(4)
+{
+    width: 73%;
+}
+.mini-navbar > ul > li:nth-of-type(5)
+{
+    width: 68%;
+}
+.mini-navbar > ul > li:nth-of-type(6)
+{
+    width: 63%;
+}
+.mini-navbar > ul > li
+{
+    cursor: pointer;
+    text-align: center;
+}
+.mini-navbar > ul > li:hover  a,.mini-navbar .fa-times:hover
+{
+    color: #fff;
+}
+.mini-navbar  .active  a
+{
+    color: #fff;
+}
+.mini-navbar  .active  , .mini-navbar  .active  :hover,.mini-navbar  .active  :focus
+{
+    color: #fff;
+    background-color: #080808;
+    width: 100%;
+}
+
+/*  <!-- NavBar For Mobile --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Navbar|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /*  <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start Home|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .home
+    {
+        background: url("../imgs/header.png") center center;
+        background-size: cover;
+        color: white;
+    }
+    .home .overlay
+    {
+        background-color: rgba(0, 0, 0, 0.479);
+    }
+    .home .overlay .container .content
+    {
+        padding-top: 28%;
+        padding-bottom: 32.1%;
+    }
+    .home .overlay .container .content h1
+    {
+        font-size: 45px;
+    }
+    .home .overlay .container .content span:first-of-type
+    {
+        color: rgb(255,139,56);
+    }
+    .home .overlay .container .content .lead
+    {
+        font-size: 30px;
+    }
+    .home .overlay .container .content hr
+    {
+        width: 25%;
+    }
+    .home .overlay .container .content p
+    {
+        font-size: 15px;
+    }
+    .btn
+    {
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+        border-radius: 0;
+        line-height: 15px;
+        height: 35px;  
+        position: relative; 
+    }
+    button:hover,button:active
+    {
+        color: white;
+    }
+    button span:first-child
+    {
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(255,139,56);
+        z-index: 1;
+    }
+    button span:nth-child(2)
+    {
+        position: relative;
+        z-index: 2;
+    }
+    .home .overlay .container .content form
+    {
+        height: 306px;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .home .overlay .container .content form .h1
+    {
+        background-color: #eee;
+        color: black;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 0;
+    }
+    .home .overlay .container .content form .form-control
+    {
+        width: 80%;
+        margin: 18px auto 29px;
+        border: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #eee;
+        border-radius: 0;
+    }
+    .home .overlay .container .content form button
+    {
+        width: 100% !important;
+        border: 1px solid #000;
+        background-color: rgb(255,139,56);
+        color: black;
+        height: 50px;
+        line-height: 25px;
+    }
+    @media only screen and (min-width : 320px){
+        .home .overlay .container .con1
+        {
+            padding-top: 80px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .home .overlay .container .con1 hr
+        {
+            width: 100%;
+        }
+        .home .overlay .container .con2
+        {
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+        .mini-navbar > ul > li
+        {
+            float: right;
+        }
+        .mini-navbar > ul > li
+        {
+            padding-left: 50px;
+        }
+
+    }
+    @media only screen and (min-width : 480px){
+        .home .overlay .container .con1
+        {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+        .home .overlay .container .con2
+        {
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+    }
+    @media only screen and (min-width : 768px){
+        .home .overlay .container .con1
+        {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+        .home .overlay .container .con2
+        {
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+    }
+    @media only screen and (min-width : 992px){
+        .home .overlay .container .content
+        {
+            padding-top: 28%;
+            padding-bottom: 32.1%;
+        }
+        .home .overlay .container .con1 hr
+        {
+            width: 25%;
+        }
+        .home .overlay .container .con1
+        {
+            text-align: left;
+        }
+    }
+    @media only screen and (min-width : 1200px){
+        .home .overlay .container .content
+    {
+        padding-top: 28%;
+        padding-bottom: 27.5%;
+    }
+    .home .overlay .container .con1 hr
+    {
+        width: 25%;
+    } 
+    }
+    /*  <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Home|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start Features|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .features
+    {
+        margin-top: 7.5px;
+        background-color: #eee;
+    }
+    .features .social
+    {
+        background-color: white;
+    }
+    .features .content .lead
+    {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .features .social i
+    {
+        color: rgb(168, 168, 168);
+        margin: 20px 0 13px 20px;
+    }
+    .features .fa-facebook:hover {
+        color: #3b5998
+      }
+      
+      .features .fa-twitter:hover {
+        color: #1da1f2
+      }
+      
+      .features .fa-google-plus:hover {
+        color: #dd4b39
+      }
+      
+      .features .fa-pinterest:hover {
+        color: #bd081c
+      }
+      
+      .features .fa-instagram:hover {
+        color: #5851db
+      }
+      
+      .features .fa-stumbleupon:hover {
+        color: #eb4924
+      }
+      
+      .features .fa-rss:hover {
+        color: #f26522
+      }
+      .features .taps
+      {
+          padding-top: 45px;
+      }
+      .features .tap  ul li
+      {
+          width: 100%;
+          height: 125px;
+          background-color: #333;
+          color: white;
+          cursor: pointer;
+          text-align: center;
+          line-height: 125px;
+          margin-bottom: 2px;
+          font-size: 20px;
+      }
+      .features .tap  ul li:first-of-type
+      {
+          margin-top: 25px;
+      }
+      .features .tap  ul li.active
+      {
+          background-color: #f26522;
+      }
+      .features .tap  ul li:hover
+      {
+          background-color: #f26522;
+      }
+      .features .taps .tap-content
+      {
+        padding-bottom: 75px;
+      }
+      .features .taps .tap-content p
+      {
+          margin-top: 15px;
+          font-size: 18px;
+          color: rgba(5, 5, 5, 0.541) !important;
+          width: 90%;
+      }
+      .features .taps .tap-content .btn
+      {
+          background-color: #f26522;
+      }
+      .features .taps img
+      {
+        margin-top: 75px;
+      }
+      .features .taps .tap2,.features .taps .tap3
+      {
+          display: none;
+      }
+      @media (min-width : 320px){
+        .features .social .content ul li
+        {
+            margin-bottom: 20px;
+        }
+        .features .content p,.tap-content  {
+            text-align: center;
+        }
+        .features .taps .tap-content p
+        {
+            width: 100%;
+        }
+         .features .tap
+      {
+          position: relative;
+          z-index: 2;
+          margin-bottom: 15px;
+      }
+    }
+    @media (min-width : 480px){
+        .features .social i{
+            margin-top: 0;
+        }
+        .features .taps .tap-content 
+        {
+            margin-top:-22px
+        }
+    }
+    @media (min-width : 768px){
+       
+       
+    }
+    @media  (min-width : 992px){
+        .features .content p,.tap-content  {
+            text-align: left;
+        }
+        .features .social i{
+            margin-top: 20px ;
+        }
+        .features .taps .tap-content p
+        {
+            width: 90%;
+        }
+        .features .taps .tap-content 
+        {
+            margin-top:0px
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Features|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+     /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start About(Sublist)|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .Sublist
+    {
+        padding-top: 60px;
+        padding-bottom: 45px;
+    }
+    .Sublist .container .h1
+    {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .Sublist .container hr
+    {
+       
+        width: 20%;
+        height: 3px;
+        background-color: #f26522;
+    }
+    .Sublist .container .first-p
+    {
+        padding-bottom: 15px;
+    }
+    .Sublist .container .fa-cloud-download,.Sublist .container .fa-cloud-upload
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #f26522;
+        color: #f26522;
+        text-align: center;
+        line-height: 46px;
+        margin-top: 9px;
+        margin-right: 22px;
+    }
+    .Sublist .container .cloud
+    {
+        width: 80%;
+    }
+    @media (min-width : 320px){
+       .Sublist
+       {
+           text-align: center;
+       }
+       .Sublist .container hr
+       {
+           width: 100%;
+       }
+       .Sublist .container .fa-cloud-download,.Sublist .container .fa-cloud-upload
+       {
+           float: none !important;
+           margin-right: 0;
+       }
+       .Sublist .container .cloud
+       {
+           width: 100%;
+           float: none !important;
+       }
+    }
+    @media (min-width : 480px){
+        
+    }
+    @media (min-width : 768px){
+       
+    }
+    @media  (min-width : 992px){
+        .Sublist
+        {
+            text-align: left;
+        }
+        .Sublist .container hr
+        {
+            width: 20%;
+        }
+        .Sublist .container .fa-cloud-download,.Sublist .container .fa-cloud-upload
+        {
+            float: left !important;
+            margin-right:22px;
+        }
+        .Sublist .container .cloud
+        {
+            width: 80%;
+            float: left !important;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+     /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End About(Sublist)|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start About (standard picture)|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .standard-picture
+    {
+        background-color: #eee;
+        padding-top: 50px;
+        padding-bottom: 12px;
+    }
+    .standard-picture .container div:first-of-type
+    {
+        margin-top: 20px;
+    }
+    .standard-picture .container .h1
+    {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .standard-picture .container hr
+    {
+       
+        width: 20%;
+        height: 3px;
+        background-color: #f26522;
+    }
+    .standard-picture .container .first-p
+    {
+        padding-bottom: 15px;
+    }
+    @media (min-width : 320px){
+        .standard-picture
+        {
+            text-align: center;
+            padding-top: 30px;
+        }
+        .standard-picture .container hr
+        {
+            width: 100%;
+        }
+        .standard-picture .container div:first-of-type
+        {
+            margin-top: 0px;
+        }
+    }
+    @media (min-width : 480px){
+        
+    }
+    @media (min-width : 768px){
+       
+       
+    }
+    @media  (min-width : 992px){
+        .standard-picture
+        {
+            text-align: left;
+            padding-top: 50px;
+        }
+        .standard-picture .container hr
+        {
+            width: 20%;
+        }
+        .standard-picture .container div:first-of-type
+        {
+            margin-top: 20px;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+     /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End About (standard picture)|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /*  <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start Awesome|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .awesome
+    {
+        padding-bottom: 40px;
+    }
+    .awesome .h1
+    {
+        padding-top: 30px;
+    }
+    .awesome hr
+    {
+        
+        width: 17%;
+        height: 3px;
+        background-color: #f26522;
+        margin: 10px auto  ;
+    }
+    .awesome .reason
+    {
+        padding-top: 15px;
+    }
+    .awesome .reason i
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #f26522;
+        color: #f26522;
+        text-align: center;
+        line-height: 55px;
+    }
+    .awesome .reason h3
+    {
+        padding-bottom: 7px;
+    }
+    @media (min-width : 320px){
+        
+        .awesome .content p
+        {
+            padding-bottom: 15px;
+        }
+        .awesome hr
+        {
+            width: 100%;
+        }
+    }
+    @media (min-width : 480px){
+       
+    }
+    @media (min-width : 768px){
+       
+       
+    }
+    @media  (min-width : 992px){
+        .awesome .content p
+        {
+            padding-bottom: 0px;
+        }
+        .awesome hr
+        {
+            width: 17%;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+    /*  <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Awesome|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start Price|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .price
+    {
+        background-color: #eee;
+        padding-bottom: 60px;
+    }
+    .price .content .h1:first-of-type
+    {
+        padding-top: 30px;
+    }
+    .price .content hr
+    {
+        
+        width: 17%;
+        height: 3px;
+        background-color: #f26522;
+        margin: 10px auto;
+    }
+    .price .option
+    {
+        height: 300px;
+        margin-top: 80px;
+    }
+    .price .pro
+    {
+        margin-top: 40px;
+    }
+    .price .option h4
+    {
+        color: white;
+        background-color: #333;
+        font-size: 25px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid white;
+        margin-bottom: 0;
+    }
+    .price .option h2
+    {
+        font-size: 50px;
+        background-color: #333;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 15px;
+    }
+    .price .pro h2
+    {
+        height: 110px;
+        line-height: 77px;
+    }
+    .price .option h2 span
+    {
+        font-size: 15px;
+    }
+    .price .option p
+    {
+        background-color: #333;
+        color: white;
+        padding-bottom: 15px;
+        border-bottom: 4px solid #f26522;
+        margin-bottom: 0;
+    }
+    .price .pro p
+    {
+        background-color: #f26522;
+        height: 40px;
+        line-height: 21px;
+        color: white;
+        padding-bottom: 15px;
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    .price .option ul li
+    {
+        background-color: white;
+        padding: 15px 0;
+        border-bottom: 3px solid #eee;
+    }
+    .price .option ul
+    {
+        margin-bottom: 0;
+    }
+    .price .option .btn
+    {
+        background-color: #d9534f;
+        font-size: 33px;
+        height: 50px;
+    }
+    @media (min-width : 320px){
+       
+        .price .option
+        {
+            margin-top: 0;
+            margin-bottom: 235px;
+        }
+        .price .pro
+        {
+            margin-bottom: 275px;
+        }
+        .price .content hr
+        {
+            width: 100% !important ;
+        }
+    }
+    @media (min-width : 480px){
+       
+        .price .option
+        {
+            margin-top: 0 !important;
+        }
+        
+    }
+    @media (min-width : 768px){
+        .price .option
+        {
+            margin-top: 0px !important;
+            
+        }
+        .price .pro
+        {
+            margin-top: 40px ;
+        }
+       
+       
+    }
+    @media  (min-width : 992px){
+        
+        .price .option
+        {
+            margin-top: 80px !important;
+            
+        }
+        .price .pro
+        {
+            margin-top: 40px !important ;
+        }
+        .price .content hr
+        {
+            width: 17% !important;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Price|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start Say|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .say
+    {
+        padding-bottom: 50px;
+    }
+    .say .h1
+    {
+        padding-top: 30px;
+    }
+    .say hr
+    {
+        
+        width: 17%;
+        height: 3px;
+        background-color: #f26522;
+        margin: 10px auto  ;
+    }
+    .say .opinion .content
+    {
+        margin-bottom: 22px;
+        margin-top: 40px;
+        background-color: #eee;
+        height: 100px;
+        padding: 15px;
+        text-align: left;
+        position: relative;
+    }
+    .say .opinion .content::after
+    {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 22px;
+        border-width: 15px 15px 15px 15px;
+        border-style: solid;
+        border-color: #Eee transparent transparent;
+    }
+    .say .opinion .lead
+    {
+        margin: 12px 0 3px 12px
+    }
+    .say .opinion p:nth-of-type(2)
+    {
+        text-align: left;
+        margin-left: 12px;
+    }
+    @media (min-width : 320px){
+       
+        
+        .say  hr
+        {
+            width: 100% !important ;
+        }
+    }
+    @media (min-width : 480px){
+    
+    }
+    @media (min-width : 768px){
+        
+    }
+    @media  (min-width : 992px){
+        
+        .say .content hr
+        {
+            width: 17% !important;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Say|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start stylish|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .stylish
+    {
+        background: url("../imgs/stylish.png") center center;
+        background-size: cover;
+        color: white;
+    }
+    .stylish .overlay
+    {
+        background-color: rgba(0, 0, 0, 0.747);
+    }
+    .stylish .h1
+    {
+        padding-top: 30px;
+    }
+    .stylish hr
+    {
+        
+        width: 17%;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 10px auto  ;
+    }
+    .stylish .btn
+    {
+        margin-bottom: 50px;
+    }
+    @media (min-width : 320px){
+       
+        
+        .stylish  hr
+        {
+            width: 100% !important ;
+        }
+    }
+    @media (min-width : 480px){
+    
+    }
+    @media (min-width : 768px){
+        
+    }
+    @media  (min-width : 992px){
+        
+        .stylish  hr
+        {
+            width: 17% !important;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End stylish|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||start contact|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+     .contact
+     {
+         padding-bottom: 75px;
+     }
+     .contact .h1
+     {
+         padding-top: 30px;
+     }
+     .contact hr
+     {
+         
+         width: 17%;
+         height: 3px;
+         background-color: #f26522;
+         margin: 10px auto  ;
+     }
+     .contact form input[placeholder="Name"],.contact form textarea
+     {
+         margin-top: 35px;
+     }
+     .contact form input,.contact form textarea
+     {
+         border: none;
+         border-radius: 0;
+         border-bottom: 1px solid #eee;
+         box-shadow: none;
+         margin-bottom: 10px;
+     }
+     .contact form textarea
+     {
+         resize: none;
+         height: 175px;
+     }
+     .contact  .button
+     {
+         margin-top: 15px;
+         margin-bottom: 0;
+     }
+     .contact  .btn
+     {
+        border: 1px solid #f26522;
+        width: 137px;
+        height: 41px;
+        line-height: 11px;
+        font-size: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+     }
+     @media (min-width : 320px){
+         .contact form textarea
+         {
+             margin-top: 0;
+         }
+        
+        .contact  hr
+        {
+            width: 100% !important ;
+        }
+    }
+    @media (min-width : 480px){
+    
+    }
+    @media (min-width : 768px){
+        
+    }
+    @media  (min-width : 992px){
+        
+        .contact  hr
+        {
+            width: 17% !important;
+        }
+        .contact form textarea
+        {
+            margin-top: 15px;
+        }
+    }
+    @media (min-width : 1200px){
+       
+    }
+     /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End contact|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||start Footer|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .footer
+    {
+        background-color: #333;
+        color: white;
+    }
+    .footer h4
+    {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Footer|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||Start Scroll Up Icon|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    .scroll i
+    {
+        position: fixed;
+        bottom: 50px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: #f26522;
+        border-radius: 50%;
+        line-height: 45px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+        color: white;
+        z-index: 9999999;
+    }
+    /* <!-- //////////////////////////////////////////////////////////////////////////////////
+    ||||||||||||||||||||||||||||||||||||||||||||End Scroll Up Icon|||||||||||||||||||||||||||||||
+    /////////////////////////////////////////////////////////////////////////////////// --> */
+    /* Load Page */
+    .load
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #333;
+        z-index: 9999999;
+    }
+    body
+    {
+        overflow: hidden;
+    }
+    .move
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left:-150px;
+        margin-top:-150px;
+    }
+    @media (min-width : 320px){
+        .move
+        {
+            margin-left: -90px;
+        }
+   }
+   @media (min-width : 480px){
+    .move
+    {
+        margin-left: -50px !important;
+    }
+   }
+   @media (min-width : 768px){
+    .move
+    {
+        margin-left: -50px !important;
+    }
+   }
+   @media  (min-width : 992px){
+       
+    .move
+    {
+        margin-left: -50px !important;
+    }
+   }
+   @media (min-width : 1200px){
+    .move
+    {
+        margin-left: -150px;
+    }
+   }
+          
+.multi-spinner-container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+  
+  .multi-spinner {
+    position: absolute;
+    width: calc(100% - 9.9px);
+    height: calc(100% - 9.9px);
+    border: 5px solid transparent;
+    border-top-color: #ff5722;
+    border-radius: 50%;
+    -webkit-animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+    animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.76) infinite;
+  }     
+          
+          
+  @-webkit-keyframes spin {
+      from {
+          -webkit-transform: rotate(0deg);
+           transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+            
+          
+  @keyframes spin {
+      from {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  
+    /* Load Page */
